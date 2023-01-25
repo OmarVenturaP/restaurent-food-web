@@ -1,0 +1,23 @@
+{
+  "name": "restaurent-food-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarVenturaP/restaurent-food-web.git"
+  },
+  "keywords": [],
+  "author": "Omar Ventura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmarVenturaP/restaurent-food-web/issues"
+  },
+  "homepage": "https://github.com/OmarVenturaP/restaurent-food-web#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1"
+  }
+}
