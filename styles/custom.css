@@ -227,6 +227,12 @@ hr {
   opacity: 0.25;
 }
 
+.hr {
+  height: 3px;
+  width: 40%;
+  background-color: rgb(77, 77, 77);
+}
+
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -2888,6 +2894,10 @@ textarea.form-control-lg {
   color: var(--bs-danger-text);
 }
 
+.h1-hero {
+  color: rgb(151, 0, 0);
+}
+
 .invalid-tooltip {
   position: absolute;
   top: 100%;
@@ -3064,10 +3074,10 @@ textarea.form-control-lg {
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #FF6624;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #ff4d00;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-hover-border-color: #fff;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #ff4d00;
@@ -3096,20 +3106,20 @@ textarea.form-control-lg {
 }
 
 .btn-success {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #198754;
-  --bs-btn-border-color: #198754;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #157347;
-  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-color: #fa6a2c;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #f3c8ab;
+  --bs-btn-hover-color: rgb(255, 185, 139);
+  --bs-btn-hover-bg: #6c757d;
+  --bs-btn-hover-border-color: #6c757d;
   --bs-btn-focus-shadow-rgb: 60, 153, 110;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #146c43;
-  --bs-btn-active-border-color: #13653f;
+  --bs-btn-active-bg: #fa6a2c;
+  --bs-btn-active-border-color: #fa6a2c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #198754;
-  --bs-btn-disabled-border-color: #198754;
+  --bs-btn-disabled-bg: #FF7F48;
+  --bs-btn-disabled-border-color: #FF7F48;
 }
 
 .btn-info {
@@ -3892,6 +3902,11 @@ textarea.form-control-lg {
   background-color: var(--bs-nav-tabs-link-active-bg);
   border-color: var(--bs-nav-tabs-link-active-border-color);
 }
+
+.nav-item:hover {
+  color: #FF6624;
+}
+
 .nav-tabs .dropdown-menu {
   margin-top: calc(-1 * var(--bs-nav-tabs-border-width));
   border-top-left-radius: 0;
@@ -6223,6 +6238,10 @@ textarea.form-control-lg {
   opacity: 1;
 }
 
+.link-active {
+  color: #FF6624;
+}
+
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -8463,6 +8482,18 @@ textarea.form-control-lg {
 .link {
     text-decoration: none;
     list-style-type: none;
+}
+
+.link-contact:hover {
+    color: #6c757d;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.link-footer {
+  color: #2c2f31;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .text-decoration-underline {
