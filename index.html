@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="javascript" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -18,17 +19,18 @@
     <title>Food</title>
 </head>
 <body>
+    <header class="z-1 position-static pt-5" id="kitchen">
     <!-- Navigation Bar-->
-    <nav class="z-2 navbar position-fixed navbar-expand-lg navbar-light bg-white col-12">
-        <div class="container-fluid container text-secondary-emphasis">
+    <nav class="z-2 navbar navbar-nav-scroll navbar-expand-lg fixed-top bg-white navbar-main">
+        <div class="container-fluid nav-space container text-secondary-emphasis">
             <a class="navbar-brand" href="#kitchen">
-                <img src="/assets/img/logo-food.png" alt="logo food" width="90" class="d-inline-block">
+                <img src="/assets/img/logo-food.png" alt="logo food" width="90" class="d-inline-block .img-brand">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
-                <ul class="navbar-nav font-nav">
+            <div class="collapse navbar-collapse justify-content-end text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav font-nav" id="nav-menu">
                     <li class="nav-item pe-3">
                         <i class="fa-solid link-active fa-utensils fs-5 pt-2"></i>
                         <a class="nav-link pt-0" href="#kitchen">Kitchen</a>
@@ -50,7 +52,7 @@
                         <a class="nav-link pt-0" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item ps-3 pe-3">
-                        <a class="nav-link font-btn" href="#" ><button type="button" class="btn btn-primary pt-2"><i class="fa-solid fa-phone"></i>+88 (01) 234 5678</button></a>
+                        <a class="nav-link font-btn" href="tel:+88012345678" ><button type="button" class="btn btn-primary pt-2"><i class="fa-solid fa-phone"></i>+88 (01) 234 5678</button></a>
                     </li>
                     <li class="nav-item pt-2 ps-1">
                         <a class="nav-link nav-item" href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f fs-5"></i></a>
@@ -62,26 +64,28 @@
             </div>
         </div>
     </nav>
-    <!-- Header and Main Image -->
-<header class="z-1 position-static pt-5" id="kitchen">
-    <div class="container-fluid">
+    <!-- Main Image -->
+    <div class="container-fluid mt-3">
         <div class="row">
-            <img src="/assets/img/header.png" class="img-fluid" alt="Restaurent">
-                <div class="row position-absolute top-50 translate-middle-y">
-                    <div class="col-7"></div>
-                    <div class=" col-5 text-center ps-4 pe-4 ">
+            <img src="/assets/img/header.png" class="img-fluid img-res" alt="Restaurent">
+                <div class="row position-absolute top-50 translate-middle-y h1-data">
+                    <div class="col-0 col-sm-2 col-md-2 col-lg-7"></div>
+                    <div class="col-12 col-sm-8 col-md-8 col-lg-5 text-center data-hero mb-3 ps-4 pe-4 ">
                         <h1 class="position-static fw-bold h1-hero">
                             Healthy Food Recipies
                         </h1>
                         <div class="row">
-                            <div class="col-2"></div>
-                            <p class="col-8 align-self-center fw-bold">
+                            <div class="col-0 col-lg-2"></div>
+                            <p class="col-12 col-lg-8 align-self-center fw-bold">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt maxime.
                             </p>
-                            <div class="col-2"></div>
+                            <div class="col-0 col-lg-2"></div>
                         </div>
-                        <button type="button" class="btn btn-primary rounded-4">Read more</button>
+                        <a class="nav-link font-btn" href="#teste" >
+                            <button type="button" class="btn btn-primary rounded-4">Read more</button>
+                        </a>
                     </div>
+                    <div class="col-0 col-sm-2 col-md-2 col-lg-0"></div>
                 </div>
         </div>
     </div>
@@ -89,15 +93,15 @@
     </div>
 </header>
     <!-- 2 Section "TESTE" -->
-<section class="container-fluid container">
+<section class="container-fluid container position-static teste-section">
     <div class="row">
         <div class="col-12 text-center pt-5 pb-5">
             <h2>
                 Teste of food
             </h2>
         </div>
-    <div class="row container-fluid" >
-        <div class="col">
+    <div class="row container-fluid justify-content-center" >
+        <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4">
             <div class="row rounded-4 div-teste">
                 <div class="col align-self-center">
                     <img src="/assets/img/salad.png" class="img-fluid" alt="salad">
@@ -112,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4">
             <div class="row rounded-4 div-teste">
                 <div class="col align-self-center">
                     <img src="/assets/img/cake.png" class="img-fluid" alt="cake">
@@ -127,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4">
             <div class="row rounded-4 div-teste">
                 <div class="col align-self-center">
                     <img src="/assets/img/burger.png" class="img-fluid" alt="burger">
@@ -142,9 +146,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row container-fluid">
-        <div class="col">
+        <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4">
             <div class="row rounded-4 div-teste">
                 <div class="col align-self-center">
                     <img src="/assets/img/icecream.png" class="img-fluid" alt="icecream">
@@ -159,7 +161,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4">
             <div class="row rounded-4 div-teste">
                 <div class="col align-self-center">
                     <img src="/assets/img/pasta.png" class="img-fluid" alt="pasta">
@@ -174,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4">
             <div class="row rounded-4 div-teste">
                 <div class="col align-self-center">
                     <img src="/assets/img/cookies.png" class="img-fluid" alt="cookies">
@@ -192,7 +194,9 @@
     </div>
     <div class="row">
         <div class="col-12 text-center pt-5 pb-5">
-            <button type="button" class="btn btn-secondary">Read more</button>
+            <a class="nav-link font-btn" href="#recipies">
+                <button type="button" class="btn btn-secondary rounded-4">Read more</button>
+            </a>
         </div>
         <div class="col-12 d-flex justify-content-center" id="recipies">
             <hr class="hr">
@@ -210,21 +214,21 @@
     </div>
     <div class="row">
         <div class="col-12 text-center">
-            <div class="row">
-                <img class="col-3 ps-0 pe-0" src="/assets/img/img1.png" width="100%" alt="recipie">
-                <img class="col-3 ps-0 pe-0" src="/assets/img/img2.png" width="100%" alt="recipie">
-                <img class="col-3 ps-0 pe-0" src="/assets/img/img3.png" width="100%" alt="recipie">
-                <img class="col-3 ps-0 pe-0" src="/assets/img/img4.png" width="100%" alt="recipie">
-            </div>
-            <div class="row">
-                <img class="col-3 ps-0 pe-0" src="/assets/img/img5.png" width="100%" alt="recipie">
-                <img class="col-3 ps-0 pe-0" src="/assets/img/img6.png" width="100%" alt="recipie">
-                <img class="col-3 ps-0 pe-0" src="/assets/img/img7.png" width="100%" alt="recipie">
-                <img class="col-3 ps-0 pe-0" src="/assets/img/img8.png" width="100%" alt="recipie">
+            <div class="row justify-content-center">
+                <img class="col-lg-3 col-md-4 col-sm-6 col-9 ps-0 pe-0" src="/assets/img/img1.png" width="100%" alt="recipie">
+                <img class="col-lg-3 col-md-4 col-sm-6 col-9 ps-0 pe-0" src="/assets/img/img2.png" width="100%" alt="recipie">
+                <img class="col-lg-3 col-md-4 col-sm-6 col-9 ps-0 pe-0" src="/assets/img/img3.png" width="100%" alt="recipie">
+                <img class="col-lg-3 col-md-4 col-sm-6 col-9 ps-0 pe-0" src="/assets/img/img4.png" width="100%" alt="recipie">
+                <img class="col-lg-3 col-md-4 col-sm-6 col-9 ps-0 pe-0" src="/assets/img/img5.png" width="100%" alt="recipie">
+                <img class="col-lg-3 col-md-4 col-sm-6 col-9 ps-0 pe-0" src="/assets/img/img6.png" width="100%" alt="recipie">
+                <img class="col-lg-3 col-md-4 col-sm-6 col-9 ps-0 pe-0" src="/assets/img/img7.png" width="100%" alt="recipie">
+                <img class="col-lg-3 col-md-4 col-sm-6 col-9 ps-0 pe-0" src="/assets/img/img8.png" width="100%" alt="recipie">
             </div>
         </div>
         <div class="col-12 text-center pt-5 pb-5">
-            <button type="button" class="btn btn-secondary">Read more</button>
+            <a class="nav-link font-btn" href="#blog">
+                <button type="button" class="btn btn-secondary rounded-4">Read more</button>
+            </a>
         </div>
     </div>
     <div class="col-12 d-flex justify-content-center" id="blog">
@@ -256,10 +260,10 @@
                 <i class="text-secondary-emphasis text-start fa-solid fa-quote-left fs-1"></i>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <img src="/assets/img/blog.png" class="rounded-circle" width="160" alt="blog">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <img src="/assets/img/blog.png" class="rounded-circle img-blog" width="160" alt="blog">
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-md-12 col-lg-8">
                     <h3>
                         New healthy recipie
                     </h3>
@@ -286,18 +290,18 @@
     <!-- 5 Section "CONTACT" -->
 <section class="pb-5 contact-section">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-1">
+        <div class="row justify-content-center">
+            <div class="col-0 col-md-0 col-sm-0 col-lg-1">
             </div>
-            <div class="col-4">
-                <img src="/assets/img/logo-food.png" alt="" width="200" class="d-inline-block mt-5">
-                <p class="pt-5 pe-5 fs-5 contact-text">
+            <div class="col-8 col-md-6 col-sm-8 col-lg-4">
+                <img src="/assets/img/logo-food.png" alt="" width="200" class="d-inline-block img-contact mt-5">
+                <p class="pt-5 fs-5 contact-text text-center">
                     It is a long established fact that a be distracted by the readable when looking at its layout.
                 </p>
             </div>
-            <div class="col-3">
-                <ul class="list-group list-group-flush mt-5 pt-5 contact-text text-center">
-                    <li class="link mt-5">
+            <div class="col-8 col-md-6 col-sm-8 col-lg-3 mt-5">
+                <ul class="list-group list-group-flush mt-5 pt-5 pb-5 mb-5 contact-text text-center">
+                    <li class="link">
                         <a href="" class="link link-contact contact-text fs-5">Home</a>
                     </li>
                     <li class="link">
@@ -314,8 +318,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-3 ps-5">
-                <h3 class="text-center mt-3 pb-3 contact-text">Contacto</h3>
+            <div class="col-8 col-md-6 col-sm-8 col-lg-3">
+                <h3 class="text-center mt-3 pb-3 contact-text contact-item">Contacto</h3>
                 <form>
                     <div class="mb-3">
                         <label for="inputNombre" class="form-label contact-text">Nombre</label>
@@ -332,6 +336,8 @@
                     <button type="submit" class="btn btn-success">Submit</button>
                 </form>
             </div>
+            <div class="col-0 col-md-0 col-sm-0 col-lg-1">
+            </div>
         </div>
     </div>
 </section>
@@ -341,25 +347,20 @@
         <div class="row">
             <div class="col-12 text-center pt-2 pb-2">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-5 justify-content-center">
                         <h2>Follow us</h2>
-                        <h2>
-                            
                             <a href="https://es-la.facebook.com/" target="_blank" class="link-footer">
-                                <i class="fa-brands fa-facebook-f fs-3 ps-2 pe-2"></i>
+                                <i class="fa-brands fa-facebook-f fs-3"></i>
                             </a>
                             <a href="https://twitter.com/" target="_blank" class="link-footer">
-                                <i class="fa-brands fa-twitter fs-3 ps-3 pe-2"></i>
+                                <i class="fa-brands fa-twitter fs-3"></i>
                             </a>
                             <a href="https://instagram.com/" target="_blank" class="link-footer">
-                                <i class="fa-brands fa-instagram fs-3 ps-3 pe-2"></i>
+                                <i class="fa-brands fa-instagram fs-3"></i>
                             </a>
                             <a href="https://youtube.com/" target="_blank" class="link-footer">
-                                <i class="fa-brands fa-youtube fs-3 ps-3 pe-2"></i>
+                                <i class="fa-brands fa-youtube fs-3"></i>
                             </a>
-
-
-                        </h2>
                     </div>
                     <div class="col-2"></div>
                     <div class="col-5 align-self-center">
@@ -374,5 +375,7 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>
