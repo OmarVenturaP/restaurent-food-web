@@ -19,11 +19,11 @@
     <title>Food</title>
 </head>
 <body>
-    <header class="z-1 position-static kitchen-p" id="kitchen">
+    <header class="z-1 position-relative kitchen-p" id="kitchen">
             <!-- Main Image -->
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="row">
-            <img src="../assets/img/header.png" class="img-fluid img-res" alt="Restaurent">
+            <img src="../assets/img/header.png" id="img-h" class="img-fluid img-res" alt="Restaurent">
                 <div class="row position-absolute translate-middle-y h1-data h1-data-p">
                     <div class="col-0 col-sm-2 col-md-2 col-lg-7"></div>
                     <div class="col-12 col-sm-8 col-md-8 col-lg-5 text-center data-hero mb-3 ps-4 pe-4 h1-hero-ss">
@@ -42,14 +42,16 @@
                 </div>
         </div>
     </div>
-    <div class="container-fluid position-absolute">
-        <a class="icon-logo" id="icon-logo" href="../index.html">
-            <img class="" src="../assets/img/logo-food.png" alt="logo food" class="d-inline-block img-brand">
-        </a>
+    <a class="icon-logo" id="icon-logo" href="../index.html">
+        <img class="" src="../assets/img/logo-food.png" alt="logo food" class="d-inline-block img-brand">
+    </a>
+    <div class="container-fluid position-relative" id="nav-1">
         <div class="rounded-4 rounded-bottom-0 ps-3 navbar navbar-products navbar-expand-lg navbar-light bg-light navbar-main">
-            <h4 class="brand-name h1-hero">
+            <a class="nav-link" href="#">
+                <h4 class="brand-name h1-hero" id="brand-name">
                 Restaurent Food Web
             </h4>
+        </a>
         </div>
         <nav class="shadow mb-5 bg-body-tertiary rounded rounded-4 rounded-top-0 ps-3 navbar navbar-products nav-2 navbar-nav-scroll navbar-expand-lg navbar-light bg-light navbar-main">
             <button type="button" class="ms-2 me-2 btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -65,7 +67,7 @@
                     </div>
                 </div>
             </div>
-                <button class="btn btn-primary btn-side-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+                <button class="btn btn-primary btn-side-menu" id="menu-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
@@ -99,7 +101,7 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <div class="  " id="navbarScroll">
+                <div class="" id="navbarScroll">
                     <ul class="d-flex my-2 my-lg-0 " style="--bs-scroll-height: 100px;">
                         <li class="nav-link ms-3 ps-5 pe-3">
                             <a class="nav-link pt-0" href="#salad">Salad</a>
@@ -126,21 +128,20 @@
     </div>
 </header>
     <!-- 2 Section "TESTE" -->
-<section class="container-fluid container position-static teste-section">
-
+<section class="container-fluid container position-static categories-section" id="section-1">
     <div class="row" data-bs-spy="scroll" data-bs-offset="0" data-bs-target="navbarScroll">
-        <div class="col-12 text-center pt-5 pb-5">
+        <div class="col-12 text-center pb-5">
             <h2>
                 Categories
             </h2>
         </div>
         <!-- 2.1 Section "Salad" -->
         <span class="col-12" id="salad">
-            <div class="row container-fluid justify-content-center" >
+            <div class="row container-fluid justify-content-center">
                 <h1 class="ps-3">
                     Salad
                 </h1>
-                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1">
+                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1" data-bs-toggle="modal" data-bs-target="#product1-salad">
                     <div class="row rounded-4 div-teste">
                         <div class="col align-self-center">
                             <img src="../assets/img/salad.png" class="img-fluid" alt="salad">
@@ -155,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1">
+                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1" data-bs-toggle="modal" data-bs-target="#product2-salad">
                     <div class="row rounded-4 div-teste">
                         <div class="col align-self-center">
                             <img src="../assets/img/salad.png" class="img-fluid" alt="cake">
@@ -170,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1">
+                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1" data-bs-toggle="modal" data-bs-target="#product3-salad">
                     <div class="row rounded-4 div-teste">
                         <div class="col align-self-center">
                             <img src="../assets/img/salad.png" class="img-fluid" alt="burger">
@@ -185,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1">
+                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1" data-bs-toggle="modal" data-bs-target="#product4-salad">
                     <div class="row rounded-4 div-teste">
                         <div class="col align-self-center">
                             <img src="../assets/img/salad.png" class="img-fluid" alt="icecream">
@@ -200,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1">
+                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1" data-bs-toggle="modal" data-bs-target="#product5-salad">
                     <div class="row rounded-4 div-teste">
                         <div class="col align-self-center">
                             <img src="../assets/img/salad.png" class="img-fluid" alt="pasta">
@@ -215,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1">
+                <div class="taste-item col-12 col-sm-8 col-md-6 col-lg-4 pt-2 pb-1" data-bs-toggle="modal" data-bs-target="#product6-salad">
                     <div class="row rounded-4 div-teste">
                         <div class="col align-self-center">
                             <img src="../assets/img/salad.png" class="img-fluid" alt="cookies">
@@ -230,6 +231,193 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </span>
+        <!-- Modal de Productos Salad -->
+        <span class="modal fade" id="product1-salad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="salad1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="salad1">Salad</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="taste-item col-12">
+                        <div class="row rounded-4">
+                            <div class="col align-self-center">
+                                <img src="../assets/img/salad.png" width="80%" class="img-fluid" alt="salad">
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    Salad
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor aliquid sed culpa molestias.
+                                </p>
+                                <button type="button" class="btn btn-secondary">MX $80.00</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            </div>
+        </span>
+        <span class="modal fade" id="product2-salad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="salad1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="salad1">Salad</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="taste-item col-12">
+                        <div class="row rounded-4">
+                            <div class="col align-self-center">
+                                <img src="../assets/img/salad.png" width="80%" class="img-fluid" alt="salad">
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    Salad
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor aliquid sed culpa molestias.
+                                </p>
+                                <button type="button" class="btn btn-secondary">MX $80.00</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            </div>
+        </span>
+        <span class="modal fade" id="product3-salad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="salad1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="salad1">Salad</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="taste-item col-12">
+                        <div class="row rounded-4">
+                            <div class="col align-self-center">
+                                <img src="../assets/img/salad.png" width="80%" class="img-fluid" alt="salad">
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    Salad
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor aliquid sed culpa molestias.
+                                </p>
+                                <button type="button" class="btn btn-secondary">MX $80.00</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            </div>
+        </span>
+        <span class="modal fade" id="product4-salad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="salad1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="salad1">Salad</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="taste-item col-12">
+                        <div class="row rounded-4">
+                            <div class="col align-self-center">
+                                <img src="../assets/img/salad.png" width="80%" class="img-fluid" alt="salad">
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    Salad
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor aliquid sed culpa molestias.
+                                </p>
+                                <button type="button" class="btn btn-secondary">MX $80.00</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            </div>
+        </span>
+        <span class="modal fade" id="product5-salad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="salad1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="salad1">Salad</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="taste-item col-12">
+                        <div class="row rounded-4">
+                            <div class="col align-self-center">
+                                <img src="../assets/img/salad.png" width="80%" class="img-fluid" alt="salad">
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    Salad
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor aliquid sed culpa molestias.
+                                </p>
+                                <button type="button" class="btn btn-secondary">MX $80.00</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            </div>
+        </span>
+        <span class="modal fade" id="product6-salad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="salad1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="salad1">Salad</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="taste-item col-12">
+                        <div class="row rounded-4">
+                            <div class="col align-self-center">
+                                <img src="../assets/img/salad.png" width="80%" class="img-fluid" alt="salad">
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    Salad
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor aliquid sed culpa molestias.
+                                </p>
+                                <button type="button" class="btn btn-secondary">MX $80.00</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
             </div>
         </span>
         <!-- 2.2 Section "Cake" -->
