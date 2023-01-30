@@ -20,114 +20,127 @@
 </head>
 <body>
     <header class="z-1 position-relative kitchen-p" id="kitchen">
-            <!-- Main Image -->
-    <div class="container-fluid" >
-        <div class="row">
-            <img src="../assets/img/header.png" id="img-h" class="img-fluid img-res" alt="Restaurent">
-                <div class="row position-absolute translate-middle-y h1-data h1-data-p">
-                    <div class="col-0 col-sm-2 col-md-2 col-lg-7"></div>
-                    <div class="col-12 col-sm-8 col-md-8 col-lg-5 text-center data-hero mb-3 ps-4 pe-4 h1-hero-ss">
-                        <h1 class="position-static fw-bold h1-hero h1-hero-p">
-                            Healthy Food Recipies
-                        </h1>
-                        <div class="row">
-                            <div class="col-0 col-lg-2"></div>
-                            <p class="col-12 col-lg-8 align-self-center fw-bold">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt maxime.
-                            </p>
-                            <div class="col-0 col-lg-2"></div>
+        <!-- Imagen principal -->
+        <div class="container-fluid" >
+            <div class="row">
+                <img src="../assets/img/header.png" id="img-h" class="img-fluid img-res" alt="Restaurent">
+                    <div class="row position-absolute translate-middle-y h1-data h1-data-p">
+                        <div class="col-0 col-sm-2 col-md-2 col-lg-7"></div>
+                        <div class="col-12 col-sm-8 col-md-8 col-lg-5 text-center data-hero mb-3 ps-4 pe-4 h1-hero-ss">
+                            <h1 class="position-static fw-bold h1-hero h1-hero-p">
+                                Healthy Food Recipies
+                            </h1>
+                            <div class="row">
+                                <div class="col-0 col-lg-2"></div>
+                                <p class="col-12 col-lg-8 align-self-center fw-bold">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt maxime.
+                                </p>
+                                <div class="col-0 col-lg-2"></div>
+                            </div>
+                        </div>
+                        <div class="col-0 col-sm-2 col-md-2 col-lg-0">
+
                         </div>
                     </div>
-                    <div class="col-0 col-sm-2 col-md-2 col-lg-0"></div>
-                </div>
-        </div>
-    </div>
-    <a class="icon-logo" id="icon-logo" href="../index.html">
-        <img class="" src="../assets/img/logo-food.png" alt="logo food" class="d-inline-block img-brand">
-    </a>
-    <div class="container-fluid position-relative" id="nav-1">
-        <div class="rounded-4 rounded-bottom-0 ps-3 navbar navbar-products navbar-expand-lg navbar-light bg-light navbar-main">
-            <a class="nav-link" href="#">
-                <h4 class="brand-name h1-hero" id="brand-name">
-                Restaurent Food Web
-            </h4>
-        </a>
-        </div>
-        <nav class="shadow mb-5 bg-body-tertiary rounded rounded-4 rounded-top-0 ps-3 navbar navbar-products nav-2 navbar-nav-scroll navbar-expand-lg navbar-light bg-light navbar-main">
-            <button type="button" class="ms-2 me-2 btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <div class="modal fade" id="exampleModal" aria-hidden="false" aria-labelledby="exampleModal" tabindex="0">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form class="d-flex">
-                            <input class="form-control " type="search" placeholder="Escriba algo para buscar" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Cerrar</button>
-                        </form>
-                    </div>
-                </div>
             </div>
+        </div>
+        <!-- Logo de la Marca -->
+        <a class="icon-logo" id="icon-logo" href="../index.html"><img class="" src="../assets/img/logo-food.png" alt="logo food" class="d-inline-block img-brand"></a>
+        <!-- Barra de Navegación -->
+        <div class="container-fluid position-relative" id="nav-1">
+            <!-- Nombre de la Marca -->
+            <div class="rounded-4 rounded-bottom-0 ps-3 navbar navbar-products navbar-expand-lg navbar-light bg-light navbar-main">
+                <a class="hero-brand" href="#">
+                    <h4 class="brand-name h1-hero" id="brand-name">
+                        Restaurent Food Web
+                    </h4>
+                </a>
+            </div>
+            <!-- Barra de Navegación -->
+            <nav id="navbar-example2" class="shadow mb-5 bg-body-tertiary rounded rounded-4 rounded-top-0 ps-3 navbar navbar-products nav-2 navbar-nav-scroll navbar-expand-lg navbar-light bg-light navbar-main">
+                <!-- Boton Search -->
+                <button type="button" class="ms-2 me-2 btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <!-- Boton Menú -->
                 <button class="btn btn-primary btn-side-menu" id="menu-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Menú lateral -->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="sideMenuLabel">Menú</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="sideMenuLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="mt-3">
+                            <ul class="d-block nav nav-pills">
+                                <li class="nav-link">
+                                    <a class="nav-link" href="#salad">Salad</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a class="nav-link" href="#cake">Cake</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a class="nav-link" href="#burger">Burger</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a class="nav-link" href="#icecream">Icecream</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a class="nav-link" href="#pasta">Pasta</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a class="nav-link" href="#cookies">Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                    <div class="mt-3">
-                        <ul class="  ">
-                            <li class="nav-link pe-3">
-                                <a class="nav-link pt-0" href="#salad">Salad</a>
+                <!-- Navegación Principal -->
+                <div class="container-fluid">
+                    <div class="" id="navbarScroll">
+                        <ul class="d-flex nav nav-pills" id="salad">
+                            <li class="nav-link pt-0 pb-0 pe-3" >
+                                <a class="nav-link" href="#salad">Salad</a>
                             </li>
-                            <li class="nav-link ps-3 pe-3">
-                                <a class="nav-link pt-0" href="#cake">Cake</a>
+                            <li class="nav-link pt-0 pb-0 ps-3 pe-3">
+                                <a class="nav-link" href="#cake">Cake</a>
                             </li>
-                            <li class="nav-link ps-3 pe-3">
-                                <a class="nav-link pt-0" href="#burger">Burger</a>
+                            <li class="nav-link pt-0 pb-0 ps-3 pe-3">
+                                <a class="nav-link" href="#burger">Burger</a>
                             </li>
-                            <li class="nav-link ps-3 pe-3">
-                                <a class="nav-link pt-0" href="#icecream">Icecream</a>
+                            <li class="nav-link pt-0 pb-0 ps-3 pe-3">
+                                <a class="nav-link" href="#icecream">Icecream</a>
                             </li>
-                            <li class="nav-link ps-3 pe-3">
-                                <a class="nav-link pt-0" href="#pasta">Pasta</a>
+                            <li class="nav-link pt-0 pb-0 ps-3 pe-3">
+                                <a class="nav-link" href="#pasta">Pasta</a>
                             </li>
-                            <li class="nav-link ps-3 pe-3">
-                                <a class="nav-link pt-0" href="#cookies">Cookies</a>
+                            <li class="nav-link pt-0 pb-0 ps-3 pe-3">
+                                <a class="nav-link" href="#cookies">Cookies</a>
+                            </li>
+                            <li class="nav-link pt-0 pb-0 ps-3 pe-3">
+                            </li>
+                            <li class="nav-link pt-0 pb-0 ps-3">
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid">
-                <div class="" id="navbarScroll">
-                    <ul class="d-flex my-2 my-lg-0 " style="--bs-scroll-height: 100px;">
-                        <li class="nav-link ms-3 ps-5 pe-3">
-                            <a class="nav-link pt-0" href="#salad">Salad</a>
-                        </li>
-                        <li class="nav-link ps-3 pe-3">
-                            <a class="nav-link pt-0" href="#cake">Cake</a>
-                        </li>
-                        <li class="nav-link ps-3 pe-3">
-                            <a class="nav-link pt-0" href="#burger">Burger</a>
-                        </li>
-                        <li class="nav-link ps-3 pe-3">
-                            <a class="nav-link pt-0" href="#icecream">Icecream</a>
-                        </li>
-                        <li class="nav-link ps-3 pe-3">
-                            <a class="nav-link pt-0" href="#pasta">Pasta</a>
-                        </li>
-                        <li class="nav-link ps-3 pe-3">
-                            <a class="nav-link pt-0" href="#cookies">Cookies</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+    </header>
+<!-- Modal de busqueda -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <form class="d-flex">
+                <input class="form-control " type="search" placeholder="Escriba algo para buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+            </form>
+        </div>
+        </div>
     </div>
-</header>
-    <!-- 2 Section "TESTE" -->
+    <!-- 2 Section "Categories" -->
 <section class="container-fluid container position-static categories-section" id="section-1">
     <div class="row" data-bs-spy="scroll" data-bs-offset="0" data-bs-target="navbarScroll">
         <div class="col-12 text-center pb-5">
@@ -912,7 +925,7 @@
         </span>
     <div class="row">
         <div class="col-12 text-center pt-5 pb-5">
-            <a class="nav-link font-btn" href="#recipies">
+            <a class="nav-item font-btn" href="#recipies">
                 <button type="button" class="btn btn-secondary rounded-4">Read more</button>
             </a>
         </div>
@@ -922,7 +935,7 @@
     </div>
 </section>
     <!-- 3 Section "OFERTAS" -->
-    <section class="container-fluid container" >
+<section class="container-fluid container" >
         <div class="row ">
             <div class="col-12 text-center  pt-5 pb-5">
                 <h2>
@@ -932,85 +945,85 @@
         </div>
     
         <!-- "CARDS CARUSEL" -->
-        <div class="content-fluid navbar-nav-scroll">
-            <div class="d-flex justify-content-start position-sticky cards-section">
-                <div class="card ms-3 me-3 col-6 col-sm-5 col-md-4 col-lg-3">
+        <div class="content-fluid navbar-nav-scroll card-carousel">
+            <div class="d-flex justify-content-start position-sticky cards-section pe-5 me-5">
+                <div class="card ms-3 me-3 col-4 col-sm-4 col-md-4 col-lg-3">
                     <img src="../assets/img/img1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div><span class="badge bg-color-primary">-20% OFF</span></div>
-                        <h5 class="card-title">Ensalada Cesar</h5>
-                        <p class="text-primary-emphasis">MX $120.00</p>
-                        <p class="text-decoration-line-through">MX $150.00</p>
+                        <h5 class="card-title mt-0 pt-0">Ensalada Cesar</h5>
+                        <p class="text-primary-emphasis pt-0 pb-0 mt-0 mb-0">MX $120.00</p>
+                        <p class="text-decoration-line-through pt-0 pb-0 mt-0 mb-0">MX $150.00</p>
                         <a href="#" class="btn btn-primary rounded-4">Pide ya</a>
                     </div>
                 </div>
-                <div class="card ms-3 me-3 col-6 col-sm-5 col-md-4 col-lg-3">
+                <div class="card ms-3 me-3 col-4 col-sm-4 col-md-4 col-lg-3">
                     <img src="../assets/img/img2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div><span class="badge bg-color-primary">-20% OFF</span></div>
-                        <h5 class="card-title">Pan Casero</h5>
-                        <p class="text-primary-emphasis">MX $30.00</p>
-                        <p class="text-decoration-line-through">MX $80.00</p>
+                        <h5 class="card-title mt-0 pt-0">Pan Casero</h5>
+                        <p class="text-primary-emphasis pt-0 pb-0 mt-0 mb-0">MX $30.00</p>
+                        <p class="text-decoration-line-through pt-0 pb-0 mt-0 mb-0">MX $80.00</p>
                         <a href="#" class="btn btn-primary  rounded-4">Pide ya</a>
                     </div>
                 </div>
-                <div class="card ms-3 me-3 col-6 col-sm-5 col-md-4 col-lg-3">
+                <div class="card ms-3 me-3 col-4 col-sm-4 col-md-4 col-lg-3">
                     <img src="../assets/img/img3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div><span class="badge bg-color-primary">-20% OFF</span></div>
-                        <h5 class="card-title">Pan Brioch</h5>
-                        <p class="text-primary-emphasis">MX $60.00</p>
-                        <p class="text-decoration-line-through">MX $86.00</p>
+                        <h5 class="card-title mt-0 pt-0">Pan Brioch</h5>
+                        <p class="text-primary-emphasis pt-0 pb-0 mt-0 mb-0">MX $60.00</p>
+                        <p class="text-decoration-line-through pt-0 pb-0 mt-0 mb-0">MX $86.00</p>
                         <a href="#" class="btn btn-primary  rounded-4">Pide ya</a>
                     </div>
                 </div>
-                <div class="card ms-3 me-3 col-6 col-sm-5 col-md-4 col-lg-3">
+                <div class="card ms-3 me-3 col-4 col-sm-4 col-md-4 col-lg-3">
                     <img src="../assets/img/img4.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div><span class="badge bg-color-primary">-20% OFF</span></div>
-                        <h5 class="card-title">Takimeshi</h5>
-                        <p class="text-primary-emphasis">MX $80.00</p>
-                        <p class="text-decoration-line-through">MX $160.00</p>
+                        <h5 class="card-title mt-0 pt-0">Takimeshi</h5>
+                        <p class="text-primary-emphasis pt-0 pb-0 mt-0 mb-0">MX $80.00</p>
+                        <p class="text-decoration-line-through pt-0 pb-0 mt-0 mb-0">MX $160.00</p>
                         <a href="#" class="btn btn-primary  rounded-4">Pide ya</a>
                     </div>
                 </div>
-                <div class="card ms-3 me-3 col-6 col-sm-5 col-md-4 col-lg-3">
+                <div class="card ms-3 me-3 col-4 col-sm-4 col-md-4 col-lg-3">
                     <img src="../assets/img/img5.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div><span class="badge bg-color-primary">-20% OFF</span></div>
-                        <h5 class="card-title">Nugets de Pollo</h5>
-                        <p class="text-primary-emphasis">MX $100.00</p>
-                        <p class="text-decoration-line-through">MX $170.00</p>
+                        <h5 class="card-title mt-0 pt-0">Nugets de Pollo</h5>
+                        <p class="text-primary-emphasis pt-0 pb-0 mt-0 mb-0">MX $100.00</p>
+                        <p class="text-decoration-line-through pt-0 pb-0 mt-0 mb-0">MX $170.00</p>
                         <a href="#" class="btn btn-primary  rounded-4">Pide ya</a>
                     </div>
                 </div>
-                <div class="card ms-3 me-3 col-6 col-sm-5 col-md-4 col-lg-3">
+                <div class="card ms-3 me-3 col-4 col-sm-4 col-md-4 col-lg-3">
                     <img src="../assets/img/img6.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div><span class="badge bg-color-primary">-20% OFF</span></div>
-                        <h5 class="card-title">Ensalada Cesar</h5>
-                        <p class="text-primary-emphasis">MX $120.00</p>
-                        <p class="text-decoration-line-through">MX $150.00</p>
+                        <h5 class="card-title mt-0 pt-0">Ensalada Cesar</h5>
+                        <p class="text-primary-emphasis pt-0 pb-0 mt-0 mb-0">MX $120.00</p>
+                        <p class="text-decoration-line-through pt-0 pb-0 mt-0 mb-0">MX $150.00</p>
                         <a href="#" class="btn btn-primary  rounded-4">Pide ya</a>
                     </div>
                 </div>
-                <div class="card ms-3 me-3 col-6 col-sm-5 col-md-4 col-lg-3">
+                <div class="card ms-3 me-3 col-4 col-sm-4 col-md-4 col-lg-3">
                     <img src="../assets/img/img7.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div><span class="badge bg-color-primary">-20% OFF</span></div>
-                        <h5 class="card-title">Ensalada Cesar</h5>
-                        <p class="text-primary-emphasis">MX $120.00</p>
-                        <p class="text-decoration-line-through">MX $150.00</p>
+                        <h5 class="card-title mt-0 pt-0">Ensalada Cesar</h5>
+                        <p class="text-primary-emphasis pt-0 pb-0 mt-0 mb-0">MX $120.00</p>
+                        <p class="text-decoration-line-through pt-0 pb-0 mt-0 mb-0">MX $150.00</p>
                         <a href="#" class="btn btn-primary  rounded-4">Pide ya</a>
                     </div>
                 </div>
-                <div class="card ms-3 me-3 col-6 col-sm-5 col-md-4 col-lg-3">
+                <div class="card ms-3 me-3 col-4 col-sm-4 col-md-4 col-lg-3">
                     <img src="../assets/img/img8.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div><span class="badge bg-color-primary">-20% OFF</span></div>
-                        <h5 class="card-title">Ensalada Cesar</h5>
-                        <p class="text-primary-emphasis">MX $120.00</p>
-                        <p class="text-decoration-line-through">MX $150.00</p>
+                        <h5 class="card-title mt-0 pt-0">Ensalada Cesar</h5>
+                        <p class="text-primary-emphasis pt-0 pb-0 mt-0 mb-0">MX $120.00</p>
+                        <p class="text-decoration-line-through pt-0 pb-0 mt-0 mb-0">MX $150.00</p>
                         <a href="#" class="btn btn-primary  rounded-4">Pide ya</a>
                     </div>
                 </div>
@@ -1019,59 +1032,8 @@
         <div class="col-12 d-flex justify-content-center" id="blog">
             <hr class="hr">
         </div>
-    </section>
-    <!-- 4 Section "BLOG" -->
-<section class="container-fluid container" >
-    <div class="row ">
-        <div class="col-12 text-center pt-5">
-            <h2>
-                Blog
-            </h2>
-        </div>
-        <div class="col-12 text-center pb-3">
-            <h2>
-                <a href="#carousel1" class="text-secondary-emphasis"><i class="fa-solid fa-circle fs-6"></i></a>
-                <a href="#carousel2" class="text-primary-emphasis"><i class="fa-solid fa-circle fs-6"></i></a>
-                <a href="#carousel3" class="text-secondary-emphasis"><i class="fa-solid fa-circle fs-6"></i></a>
-            </h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3">
-            <a href="#carousel-left" class="text-secondary-emphasis"><i class=" fa-solid fa-circle-chevron-left fs-2 ms-5 mt-5 pt-5"></i></a>
-        </div>
-        <div class="col-6 text-center  pt-5 pb-5">
-            <div class="row">
-                <i class="text-secondary-emphasis text-start fa-solid fa-quote-left fs-1"></i>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <img src="../assets/img/blog.png" class="rounded-circle img-blog" width="160" alt="blog">
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-8">
-                    <h3>
-                        New healthy recipie
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti excepturi sed tenetur maxime deleniti numquam consequuntur quis, vero debitis aperiam vitae ipsum ex odio, id, unde architecto illum omnis? Totam.
-                    </p>
-                </div>
-            </div>
-            <h2>
-            </h2>
-            <div class="row">
-                <i class="text-secondary-emphasis text-end fa-solid fa-quote-right fs-1"></i>
-            </div>
-        </div>
-        <div class="col-3 text-end">
-            <a href="#carousel-right" class="text-primary-emphasis">
-                <i class="fa-solid fa-circle-chevron-right fs-2 me-5 mt-5 pt-5"></i>
-            </a>
-        </div>
-    </div>
-    <div class="" id="contact">
-    </div>
 </section>
+<div class="mt-5 pt-5"></div>
     <!-- "FOOTER" -->
 <footer class="footer">
     <div class="container-fluid">
@@ -1111,7 +1073,9 @@
         // Encontrar la altura de la barra de navegación
         var el = document.querySelector('#nav-1');
         var coords = el.getBoundingClientRect().top;
+        // fijar si el tamaño es responsivo para dispositivos móviles
         var x = window.matchMedia("(max-width: 991.98px)").matches;
+        // Crear casos de altura de barra de navegación
         switch (true){
             case coords <= 190 && x === false:
                 var $top = true;
@@ -1126,8 +1090,7 @@
                 console.log('Case false')
                 break;
         };
-
-        // Aplicando función para ocultar logo
+        // Aplicando clase CSS para mostrat/ocultar logo
         switch (true) {
             case $top == true:
                 document.querySelector('#icon-logo').classList.add('scrolling');
@@ -1145,25 +1108,35 @@
                 break;
         }
 
-        // Encontrar el margen left del boton de saalad
-        var item = document.querySelector('#navbarScroll');
-        var coordsItem = item.getBoundingClientRect().left;
-            if (coordsItem <= -22){
-                var $left = true;
-                } else var $left = false;
-
-        switch (true) {
-            case $left == true:
-                document.querySelector('#menu-1').classList.add('menu-scroll');
-                console.log('Menu fijado');
-                break;
-            case $left == false:
-                document.querySelector('#menu-1').classList.remove('menu-scroll');
-                console.log('Menu normal');
-                break;
-        }
-
     })
+    /* // Función para encontrat el margen left del menu de navegación
+    window.addEventListener('touchstart', () => {
+    // Encontrar el margen left del boton de saalad
+    var margin = document.querySelector('#navbarScroll');
+    var styles = window.getComputedStyle(margin);
+    var coordsMargin = styles.getPropertyValue('margin-left');
+    console.log(coordsMargin);  
+    switch (true) {
+        case coordsMargin <= 80:
+            var $left = true;
+            console.log('Menu fijado');
+            break;
+        case coordsMargin >= 80:
+            var $left = false;
+            console.log('Menu normal');
+            break;
+    }
+    switch (true) {
+        case $left == true:
+            document.querySelector('#menu-1').classList.add('menu-scroll');
+            console.log('Menu fijado');
+            break;
+        case $left == false:
+            document.querySelector('#menu-1').classList.remove('menu-scroll');
+            console.log('Menu normal');
+            break;
+    }
+    })*/
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
