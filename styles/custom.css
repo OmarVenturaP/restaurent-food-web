@@ -11985,15 +11985,12 @@ margin-left: 155px !important;
     display: none;
   }
   /* Section principal */
-
   .navbar {
     width: 100%;
   }
-
   .nav-pills {
     margin-left: 80px;
   }
-
   #kitchen {
     position: relative !important;
     justify-content: center;
@@ -12002,15 +11999,12 @@ margin-left: 155px !important;
   .categories-section {
     margin-top: -100px;
   }
-
   .categories-section-scroll {
     margin-top: 40px;
   }
-
   .img-res {
     opacity: 0.8;
   }
-
   .h1-data {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -12019,17 +12013,14 @@ margin-left: 155px !important;
   .list-group {
     margin: 0 !important;
   }
-
   .contact-item {
     margin-top: 50px !important;
     padding-top: 10px !important;
   }
-
   /* Section Productos */
   .brand-name {
     margin-left: 140px;
   }
-  
   .btn-side-menu {
     position: absolute;
     left: 55px;
@@ -12038,7 +12029,6 @@ margin-left: 155px !important;
     position: absolute;
     left: 0px;
   }
-
   .icon-logo {
     position: relative;
     margin-left: -79% !important;
@@ -12046,38 +12036,44 @@ margin-left: 155px !important;
     width: 120px;
     height: 120px;
     padding: 50px 0px;;
-}
+  }
   .icon-logo > img {
     width: 120px;
   }
   .scrolling {
     left: -200%;
   }
-
   .h1-data-p {
     margin-left: auto !important;
     margin-right: auto !important;
   }
-
   .navbar-products {
     top: -100px;
   }
-
   .scrolling {
     left: -500px;
   }
-
   .card-carousel {
     align-self: center;
-    margin-left: -15vw;
-    margin-right: -15vw;
   }
   .card-carousel > div {
-
     width: 100%;
-    padding-left: 10vw;
     padding-right: 10vw;
-
+  }
+  .form-position{
+    position: absolute;
+    top: 35px;
+    width: 100%;
+  }
+  .input-search{
+    position: absolute;
+    left: 0px;
+    padding-right: 80px;
+  }
+  .btn-search {
+    position: absolute;
+    left: 85%;
+    right: 0px;
   }
 }
 
@@ -12149,11 +12145,22 @@ margin-left: 155px !important;
     margin-left: 100px;
     size: 10%;
   }
+  .card-carousel {
+    justify-content: flex-start;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .card-carousel > div {
+    width: 110%;
+  }
 
 }
 
 @media (max-width: 350px){
 
+  .card-carousel {
+    width: 100%;
+  }
 #icon-logo {
   top: -120px;
 
@@ -12167,5 +12174,15 @@ display: none;
 .brand-name {
   margin-left: 0px;
   align-self: baseline;
+}
+.form-position {
+  background: #ffff;
+}
+.input-search{
+  width: 75%;
+}
+.btn-search {
+  width: 25% !important;
+  margin-left: -26px;
 }
 }
