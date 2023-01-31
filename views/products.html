@@ -47,7 +47,7 @@
         <!-- Barra de Navegación -->
         <div class="container-fluid position-relative" id="nav-1">
             <!-- Nombre de la Marca -->
-            <div class="rounded-4 rounded-bottom-0 ps-3 navbar navbar-products navbar-expand-lg navbar-light bg-light navbar-main">
+            <div class="rounded-4 rounded-bottom-0 ps-3 navbar navbar-products navbar-expand-lg navbar-light bg-light ">
                 <a class="hero-brand" href="#">
                     <h4 class="brand-name h1-hero" id="brand-name">
                         Restaurent Food Web
@@ -55,13 +55,13 @@
                 </a>
             </div>
             <!-- Barra de Navegación -->
-            <nav id="navbar-example2" class="shadow mb-5 bg-body-tertiary rounded rounded-4 rounded-top-0 ps-3 navbar navbar-products nav-2 navbar-nav-scroll navbar-expand-lg navbar-light bg-light navbar-main">
+            <nav id="navbar-example2" class="shadow mb-5 bg-body-tertiary rounded rounded-4 rounded-top-0 ps-3 navbar navbar-products nav-2 navbar-nav-scroll navbar-expand-lg navbar-light bg-light ">
                 <!-- Boton Search -->
-                <button type="button" class="ms-2 me-2 btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="ms-2 btn btn-outline-success" id="search-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
                 <!-- Boton Menú -->
-                <button class="btn btn-primary btn-side-menu" id="menu-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+                <button class="btn-primary btn-side-menu" id="menu-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Menú lateral -->
@@ -96,26 +96,26 @@
                     </div>
                 </div>
                 <!-- Navegación Principal -->
-                <div class="container-fluid">
-                    <div class="" id="navbarScroll">
-                        <ul class="d-flex nav nav-pills" id="salad">
+                <div class="container-fluid ps-0">
+                    <div class="d-flex" id="navbarScroll">
+                        <ul class="d-flex nav nav-pills" id="salad-1">
                             <li class="nav-link pt-0 pb-0 pe-3" >
-                                <a class="nav-link" href="#salad">Salad</a>
+                                <a class="nav-link nav-button" href="#salad">Salad</a>
                             </li>
                             <li class="nav-link pt-0 pb-0 ps-3 pe-3">
-                                <a class="nav-link" href="#cake">Cake</a>
+                                <a class="nav-link nav-button" href="#cake">Cake</a>
                             </li>
                             <li class="nav-link pt-0 pb-0 ps-3 pe-3">
-                                <a class="nav-link" href="#burger">Burger</a>
+                                <a class="nav-link nav-button" href="#burger">Burger</a>
                             </li>
                             <li class="nav-link pt-0 pb-0 ps-3 pe-3">
-                                <a class="nav-link" href="#icecream">Icecream</a>
+                                <a class="nav-link nav-button" href="#icecream">Icecream</a>
                             </li>
                             <li class="nav-link pt-0 pb-0 ps-3 pe-3">
-                                <a class="nav-link" href="#pasta">Pasta</a>
+                                <a class="nav-link nav-button" href="#pasta">Pasta</a>
                             </li>
                             <li class="nav-link pt-0 pb-0 ps-3 pe-3">
-                                <a class="nav-link" href="#cookies">Cookies</a>
+                                <a class="nav-link nav-button" href="#cookies">Cookies</a>
                             </li>
                             <li class="nav-link pt-0 pb-0 ps-3 pe-3">
                             </li>
@@ -2004,8 +2004,8 @@
 <script>    
     window.addEventListener('scroll',  () => {
         // Encontrar la altura de la barra de navegación
-        var el = document.querySelector('#nav-1');
-        var coords = el.getBoundingClientRect().top;
+        var navbar = document.querySelector('#nav-1');
+        var coords = navbar.getBoundingClientRect().top;
         // Comprbar si el tamaño es responsivo para dispositivos móviles
         var x = window.matchMedia("(max-width: 991.98px)").matches;
             // Crear casos de altura de barra de navegación
@@ -2020,57 +2020,53 @@
                         $top = false
                         break;
                 };
+            // Declarando elementos a estilizar
+            var iconLogo = document.querySelector('#icon-logo');
+            var imgH = document.querySelector('#img-h');
+            var brandName = document.querySelector('#brand-name');
+            var categorieSection = document.querySelector('#section-1');
             // Aplicando clase CSS para mostrat/ocultar logo
             switch (true) {
                     case $top == true:
-                        document.querySelector('#icon-logo').classList.add('scrolling');
-                        document.querySelector('#img-h').classList.add('img-h');
-                        document.querySelector('#brand-name').classList.add('name-scrolling');
-                        document.querySelector('#nav-1').classList.add('navbar-1');
-                        document.querySelector('#section-1').classList.add('categories-section-scroll');
-                        console.log('Clases aplicadas');
+                        iconLogo.classList.add('scrolling');
+                        imgH.classList.add('img-h');
+                        brandName.classList.add('name-scrolling');
+                        navbar.classList.add('navbar-1');
+                        categorieSection.classList.add('categories-section-scroll');
                         break;
                     case $top == false:
-                        document.querySelector('#icon-logo').classList.remove('scrolling');
-                        document.querySelector('#img-h').classList.remove('img-h');
-                        document.querySelector('#brand-name').classList.remove('name-scrolling');
-                        document.querySelector('#nav-1').classList.remove('navbar-1');
-                        document.querySelector('#section-1').classList.remove('categories-section-scroll');
-                        console.log('Clases removidas');
+                        iconLogo.classList.remove('scrolling');
+                        imgH.classList.remove('img-h');
+                        brandName.classList.remove('name-scrolling');
+                        navbar.classList.remove('navbar-1');
+                        categorieSection.classList.remove('categories-section-scroll');
                         break;
-                }
+                };
     });
-    // Encontrar el margen left del boton de saalad
-    window.addEventListener('onclick',()=>{
-        var margin = document.querySelector('#navbarScroll');
-        var coordsLeft = margin.getBoundingClientRect().left;
-        console.log(coordsLeft)
-    })
-    /*
-    var margin = document.querySelector('#navbarScroll');
-    var coordsLeft = margin.getBoundingClientRect().left;
-    console.log(coordsLeft)
+    window.addEventListener('touchmove',  () => {
+        var ref = document.querySelector('#salad-1');
+        var el = document.querySelector('#menu-1');
+        var search = document.querySelector('#search-1');
+        // Encontrar el margen de referencia boton de saalad
+        var coordsLeft = ref.getBoundingClientRect().left;
         // Condición para margen del menu de navegación
         switch (true) {
-            case coordsLeft <= -22:
-                var $left = true;
+            case coordsLeft <= 60:
+                el.classList.add('menu-scroll');
+                search.classList.add('search-scroll');
                 break;
-            case coordsLeft > -22:
-                var $left = false;
+            case coordsLeft >= 60:
+                el.classList.remove('menu-scroll');
+                search.classList.remove('search-scroll');
                 break;
         }
         // Aplicando clase CSS para fijar o mover el botón
-        /*
         switch (true) {
-            case $left == true:
-                document.querySelector('#menu-1').classList.add('menu-scroll');
-                console.log('Menu fijado');
-                break;
             case $left == false:
-                document.querySelector('#menu-1').classList.remove('menu-scroll');
-                console.log('Menu normal');
+
                 break;
-            }*/
+            }
+        })
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>

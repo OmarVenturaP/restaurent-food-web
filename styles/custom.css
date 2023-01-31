@@ -3261,6 +3261,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #198754;
   --bs-gradient: none;
+  border: 0;
 }
 
 .btn-outline-info {
@@ -3869,7 +3870,6 @@ textarea.form-control-lg {
 }
 .nav-link:hover, .nav-link:focus, .nav-link:active{
   background: var(--bs-primary);
-  color: var(--bs-white);
 }
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -3930,6 +3930,7 @@ textarea.form-control-lg {
   background: none;
   border: 0;
   border-radius: var(--bs-nav-pills-border-radius);
+  border: 0.1rem solid transparent;
 }
 .nav-pills .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -3938,8 +3939,8 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: var(--bs-nav-pills-link-active-color);
-  background-color: var(--bs-nav-pills-link-active-bg);
+  color: var(--bs-nav-pills-link-active-bg);
+  border: var(--bs-nav-pills-link-active-bg) 0.1rem solid;
 }
 
 .nav-fill > .nav-link,
@@ -3990,10 +3991,12 @@ textarea.form-control-lg {
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+.navbar-main{
+  flex-wrap: wrap;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11906,6 +11909,13 @@ textarea.form-control-lg {
 }
 .navbar-products {
   top: -180px;
+  width: 110%;
+  margin-left: -12px;
+}
+.navbar-products > nav  {
+  width: 110%;
+  margin-left: -12px;
+  border-radius: 0px !important;
 }
 
 .brand-name {
@@ -11939,10 +11949,6 @@ textarea.form-control-lg {
 .name-scrolling{
   margin-left: 0px !important;
   transition: all 0.3s ease-in-out;
-}
-.menu-scroll {
-position: fixed !important;
-margin-left: -50px !important;
 }
 .cards-section {
   padding: 20px 0px;
@@ -11985,7 +11991,26 @@ margin-left: -50px !important;
   color: rgb(151, 0, 0);
   margin-top: -200px
 }
-
+.btn-side-menu {
+  position: relative;
+  left: 55px;
+  background: #f9fafb;
+  border-radius: 15%;
+  border: 0px !important;
+  padding: 7px 10px;
+}
+.menu-scroll {
+  position: sticky !important;
+  left: 0px !important;
+  transition: all 0.3s step-start;
+  padding: 7.5px 10px ;
+  border-radius: 0;
+  border: 1px solid #fff !important;
+  }
+  .search-scroll {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
 @media (max-width: 991.98px) {
 
   .navbar-nav-scroll::-webkit-scrollbar {
@@ -11996,7 +12021,13 @@ margin-left: -50px !important;
     width: 100%;
   }
   .nav-pills {
-    margin-left: 80px;
+    margin-left: 55px;
+  }
+  .nav-button:hover {
+    background: #fff !important;
+    color: var(--bs-nav-pills-link-active-bg) !important;
+  }
+
   }
   .nav-menu-side {
     margin-left: 0px !important;
@@ -12033,10 +12064,6 @@ margin-left: -50px !important;
   /* Section Productos */
   .brand-name {
     margin-left: 140px;
-  }
-  .btn-side-menu {
-    position: absolute;
-    left: 55px;
   }
   .btn-outline-success {
     position: absolute;
@@ -12088,7 +12115,6 @@ margin-left: -50px !important;
     left: 85%;
     right: 0px;
   }
-}
 
 @media (max-width: 575.98px) {
 
