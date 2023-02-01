@@ -11909,7 +11909,7 @@ textarea.form-control-lg {
 }
 .navbar-products {
   top: -180px;
-  width: 110%;
+  width: 100vw;
   margin-left: -12px;
 }
 .navbar-products > nav  {
@@ -11997,19 +11997,21 @@ textarea.form-control-lg {
   background: #f9fafb;
   border-radius: 15%;
   border: 0px !important;
-  padding: 7px 10px;
+  padding: 7.5px 10px;
 }
 .menu-scroll {
   position: sticky !important;
-  left: 0px !important;
-  transition: all 0.3s step-start;
+  left: -2.5px !important;
   padding: 7.5px 10px ;
   border-radius: 0;
-  border: 1px solid #fff !important;
+  border: 0px solid #fff !important;
   }
   .search-scroll {
     opacity: 0;
     transition: all 0.4s ease-in-out;
+  }
+  .nav-button {
+    padding: 0.25rem 0.55rem !important;
   }
 @media (max-width: 991.98px) {
 
@@ -12018,7 +12020,7 @@ textarea.form-control-lg {
   }
   /* Section principal */
   .navbar {
-    width: 100%;
+    width: 100vw;
   }
   .nav-pills {
     margin-left: 55px;
@@ -12026,8 +12028,6 @@ textarea.form-control-lg {
   .nav-button:hover {
     background: #fff !important;
     color: var(--bs-nav-pills-link-active-bg) !important;
-  }
-
   }
   .nav-menu-side {
     margin-left: 0px !important;
@@ -12115,7 +12115,7 @@ textarea.form-control-lg {
     left: 85%;
     right: 0px;
   }
-
+}
 @media (max-width: 575.98px) {
 
   #kitchen {
@@ -12188,7 +12188,7 @@ textarea.form-control-lg {
     width: 100%;
   }
   .card-carousel > div {
-    width: 110%;
+    width: 100%;
   }
 
 }
@@ -12209,12 +12209,16 @@ textarea.form-control-lg {
   .parr-i {
     font-size: 0.8rem;
   }
+  .col-6 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
   }
+}
 
 @media (max-width: 350px){
 
   .card-carousel {
-    width: 100%;
+    width: 100vw;
   }
   .icon-logo {
     width: 80px;
@@ -12286,10 +12290,21 @@ textarea.form-control-lg {
   .brand-name{
     font-size: medium;
   }
+  .col-6 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
 }
 @media (max-width: 259.98px){
   .brand-name{
     font-size: medium;
     margin-left: 40px;
+  }
+  .col-6 {
+    flex: 0 0 auto;
+    width: 90%;
+  }
+  .link-footer{
+    font-size: 0.8rem;
   }
 }
